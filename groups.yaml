@@ -1,0 +1,30 @@
+security:
+    name: Security
+    entities:
+        - lock.front_door_lock_locked
+        - sensor.front_door_lock_alarm_level
+        - sensor.front_door_lock_alarm_type
+
+weather:
+    name: Weather
+    entities:
+        - sun.sun
+        - sensor.yr_symbol
+        - sensor.yr_temperature
+        - sensor.yr_humidity
+
+living_room:
+    name: Living Room
+    entities:
+        - media_player.rokustick
+
+zwave_devices:
+    name: ZWave
+    entities:
+        - zwave.aeotec_zw090_zstick_gen5_us
+        - zwave.front_door_lock
+
+homeassistant:
+    name: Home Assistant
+    entities:
+        - sensor.rpi_temp
