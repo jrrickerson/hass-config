@@ -62,9 +62,9 @@ sensor:
       #- cloudiness
       #- precipitation
   - platform: command_line
-    name: "RPi Temp"
+    name: "RPi Temperature"
     command: "cat /sys/class/thermal/thermal_zone0/temp"
-    unit_of_measure: "C"
+    unit_of_measure: "°C"
     value_template: '{{ value | multiply(0.001) | round }}'
 
 # Text to speech

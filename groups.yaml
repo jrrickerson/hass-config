@@ -27,4 +27,4 @@ zwave_devices:
 homeassistant:
     name: Home Assistant
     entities:
-        - sensor.rpi_temp
+        - sensor.rpi_temperature
