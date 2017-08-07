@@ -80,11 +80,8 @@ zwave:
   network_key: !secret network_key
 
 device_tracker:
-  - platform: tomato
-    host: !secret tomato_host
-    username: !secret tomato_username
-    password: !secret tomato_password
-    http_id: !secret tomato_http_id
+  - platform: nmap_tracker
+    hosts: "192.168.1.100-199"
 
 group: !include groups.yaml
 automation: !include automations.yaml
